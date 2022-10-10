@@ -1,0 +1,99 @@
+/*-- page body --*/
+.page-body{
+	padding-top: 48px;
+	width: 100%;
+	display: flex;
+}
+	/*-- left content --*/
+	.left-content{
+		background-color: black;
+		color: white;
+		width: 100%;
+		max-width: 300px;
+	}
+	.left-content a{
+		text-decoration: none;
+		color: white;
+	}
+		.left-menu{
+			padding-bottom: 48px;
+		}
+		.left-menu div{
+			border-top-width: 1px;
+			border-top-style: solid;
+			border-top-color: rgba(255, 255, 255, 0.2); 
+		}
+		.left-menu a{
+			display: block;
+			padding: 12px 30px;
+			font-size: 12px;
+		}
+		#last-left-menu{
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			border-bottom-color: rgba(255, 255, 255, 0.2);
+		}
+		.top-posts{
+			padding: 30px;
+		}
+		.website-stats{
+			padding: 30px;
+		}
+		#top-posts-title{
+			font-size: 14px;
+			font-weight: bold;
+			font-style: normal;
+		}
+		#website-stats-title{
+			font-size: 14px;
+			font-weight: bold;
+			font-style: normal;
+		}
+
+	/*-- right content --*/
+	.right-content{
+		width: 100%;
+		max-width: 300px;
+		padding-top: 60px;
+		padding-right: 20px;
+	}
+		.recent-posts{
+
+		}
+		.recent-posts a{
+			text-decoration: none;
+			color: green;
+		}
+		.recent-posts div{
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			border-bottom-color: rgba(0, 0, 0, 0.2);
+		}
+
+		/*-- Calendar --*/
+		#calendar{
+
+		}
+		:root {
+			--calendar-table-width: 280px;
+			--calendar-unit-width: calc(var(--calendar-table-width)/7);
+			--calendar-table-height: 240px;
+			--calendar-unit-height: calc(var(--calendar-table-height)/6);
+		}
+
+		#calendar * {
+			box-sizing: border-box;
+		}
+		#calendar table, th, td {
+			border: 1px solid black;
+		}
+		#calendar table {
+		  	border-collapse: collapse;
+		}
+		#calendar th, td {
+			width: var(--calendar-unit-width);
+			height: var(--calendar-unit-height);
+		}
+		#calendar td {
+			text-align: center;
+		}
